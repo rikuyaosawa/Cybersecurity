@@ -27,8 +27,8 @@ However, it wasn't until 1989 when the Internet as we know it was invented by Ti
 
 A network can be one of two types:
 
--   A private network
--   A public network
+- A private network
+- A public network
 
 ## Identifying Devices on a Network
 
@@ -36,8 +36,8 @@ Every human has an individual set of fingerprints which means that even if they 
 
 These are:
 
--   **An IP Address**
--   **A Media Access Control (MAC) Address** - think of this as being similar to a serial number.
+- **An IP Address**
+- **A Media Access Control (MAC) Address** - think of this as being similar to a serial number.
 
 ### IP Addresses
 
@@ -65,8 +65,8 @@ Enter IP address versions. So far, we have only discussed one version of the Int
 
 **IPv6** is a new iteration of the Internet Protocol addressing scheme to help tackle this issue. Although it is seemingly more daunting, it boasts a few benefits:
 
--   Supports up to `2^128` of IP addresses (340 trillion-plus), resolving the issues faced with IPv4
--   More efficient due to new methodologies
+- Supports up to `2^128` of IP addresses (340 trillion-plus), resolving the issues faced with IPv4
+- More efficient due to new methodologies
 
 Example of IPv6:
 
