@@ -13,13 +13,13 @@ Table of Contents
 
 ## What is Networking?
 
-> In computing, a **network** is simply devices that are connected together. A network can be formed by anywhere from 2 devices to billions. These devices include everything from your laptop and phone to security cameras, traffic lights and even farming!
+In computing, a **network** is simply devices that are connected together. A network can be formed by anywhere from 2 devices to billions. These devices include everything from your laptop and phone to security cameras, traffic lights and even farming!
 
 Networks are integrated into our everyday life. Be it gathering data for the weather, delivering electricity to homes or even determining who has the right of way at a road. Because networks are so embedded in the modern-day, networking is an essential concept to grasp in cybersecurity.
 
 ## What is the Internet?
 
-> **The Internet** is one giant network that consists of many, many small networks within itself.
+**The Internet** is one giant network that consists of many, many small networks within itself.
 
 The first iteration of the Internet was within the ARPANET project in the late 1960s. This project was funded by the United States Defence Department and was the first documented network in action.
 
@@ -41,7 +41,7 @@ These are:
 
 ### IP Addresses
 
-> **An IP address (or Internet Protocol)** address can be used as a way of identifying a host on a network for a period of time, where that IP address can then be associated with another device without the IP address changing.
+**An IP address (or Internet Protocol)** address can be used as a way of identifying a host on a network for a period of time, where that IP address can then be associated with another device without the IP address changing.
 
 Example of IPv4:
 
@@ -76,7 +76,7 @@ Example of IPv6:
 
 ### MAC Addresses
 
-> Devices on a network will all have a physical network interface, which is a microchip board found on the device's motherboard. This network interface is assigned a unique address at the factory it was built at, called a **MAC (Media Access Control ) address**.
+Devices on a network will all have a physical network interface, which is a microchip board found on the device's motherboard. This network interface is assigned a unique address at the factory it was built at, called a **MAC (Media Access Control ) address**.
 
 The MAC address is a **twelve-character** hexadecimal number (a base sixteen numbering system used in computing to represent numbers) split into two's and separated by a colon. These colons are considered separators.
 
@@ -94,7 +94,7 @@ However, an interesting thing with MAC addresses is that they can be faked or **
 
 ## Ping (ICMP)
 
-> **Ping** is one of the most fundamental network tools available to us.
+**Ping** is one of the most fundamental network tools available to us.
 
 Ping uses **ICMP (Internet Control Message Protocol)** packets to determine the performance of a connection between devices, for example, if the connection exists or is reliable.
 

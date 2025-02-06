@@ -18,7 +18,7 @@ Table of Contents
 
 The term kill chain is a military concept related to the structure of an attack. It consists of target identification, decision and order to attack the target, and finally the target destruction.
 
-Thanks to **[Lockheed Martin ↗](https://www.lockheedmartin.com/en-us/capabilities/cyber.html)**, a global security and aerospace company, that established the **Cyber Kill Chain®** framework for the cybersecurity industry in 2011 based on the military concept.
+Thanks to **[Lockheed Martin](https://www.lockheedmartin.com/en-us/capabilities/cyber.html)**, a global security and aerospace company, that established the **Cyber Kill Chain®** framework for the cybersecurity industry in 2011 based on the military concept.
 
 The framework defines the steps used by adversaries or malicious actors in cyberspace. To succeed, an adversary needs to go through all phases of the Kill Chain. We will go through the attack phases and help you better understand adversaries and their techniques used in the attack to defend yourself.
 
@@ -123,7 +123,3 @@ After going through six phases of the attack, the attacker can finally achieve h
 - Collect and exfiltrate sensitive data.
 - Deleting the backups and shadow copies. Shadow Copy is a Microsoft technology that can create backup copies, snapshots of computer files, or volumes.
 - Overwrite or corrupt data.
-
----
-
-End

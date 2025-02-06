@@ -4,11 +4,8 @@ Table of Contents
 
 - [Security Principles](#security-principles)
   - [CIA Triad](#cia-triad)
-    - [Example: Online Shopping](#example-online-shopping)
-    - [Beyond CIA](#beyond-cia)
     - [Parkerian Hexad](#parkerian-hexad)
   - [DAD Triad](#dad-triad)
-    - [Example: Records and Related System](#example-records-and-related-system)
   - [Fundamental Concepts of Security Models](#fundamental-concepts-of-security-models)
     - [Bell-LaPadula Model](#bell-lapadula-model)
     - [Biba Model](#biba-model)
@@ -32,7 +29,7 @@ Before we can describe something as secure, we need to consider better what make
 
 The emphasis does not need to be the same on all three security functions. One example would be a university announcement; although it is usually not confidential, the document’s integrity is critical.
 
-### Example: Online Shopping
+#### Example: Online Shopping
 
 Let’s consider the CIA security triad in the case of placing an order for online shopping:
 
@@ -40,7 +37,7 @@ Let’s consider the CIA security triad in the case of placing an order for onli
 - **Integrity**: After filling out your order, if an intruder can alter the shipping address you have submitted, the package will be sent to someone else. Without data integrity, you might be very reluctant to place your order with this seller.
 - **Availability**: To place your online order, you will either browse the store’s website or use its official app. If the service is unavailable, you won’t be able to browse the products or place an order. If you continue to face such technical issues, you might eventually give up and start looking for a different online store.
 
-### Beyond CIA
+#### Beyond CIA
 
 Going one more step beyond the CIA security triad, we can think of:
 
@@ -75,7 +72,7 @@ The security of a system is attacked through one of several means. It can be via
 
 The opposite of the **CIA Triad** would be the **DAD Triad: Disclosure, Alteration, and Destruction**.
 
-### Example: Records and Related System
+#### Example: Records and Related System
 
 - **Disclosure**: As in most modern countries, healthcare providers must maintain medical records’ confidentiality. As a result, if an attacker succeeds in stealing some of these medical records and dumping them online to be viewed publicly, the health care provider will incur a loss due to this data disclosure attack.
 - **Alteration**: Consider the gravity of the situation if the attacker manages to modify patient medical records. This alteration attack might lead to the wrong treatment being administered, and consequently, this alteration attack could be life-threatening.

@@ -27,7 +27,7 @@ Table of Contents
 
 This is the core of "Offensive Security."
 
-> It involves breaking into computer systems, exploiting software bugs, and finding loopholes in applications to gain unauthorized access. The goal is to understand hacker tactics and enhance our system defences.
+It involves breaking into computer systems, exploiting software bugs, and finding loopholes in applications to gain unauthorized access. The goal is to understand hacker tactics and enhance our system defences.
 
 ### What careers are there?
 
@@ -41,8 +41,8 @@ Here is a short description of a few offensive security roles, sometimes referre
 
 Defensive security is concerned with two main tasks:
 
-    1. Preventing intrusions from occurring
-    2. Detecting intrusions when they occur and responding properly
+1. Preventing intrusions from occurring
+2. Detecting intrusions when they occur and responding properly
 
 <font color="lightblue">Blue teams</font> are part of the defensive security landscape.
 
@@ -63,9 +63,9 @@ There is much more to defensive security. Aside from the above, we will also cov
 
 ### Security Operations Center (SOC)
 
-> A **Security Operations Center (SOC)** is a team of cyber security professionals that monitors the network and its systems to detect malicious cyber security events.
+A **Security Operations Center (SOC)** is a team of cyber security professionals that monitors the network and its systems to detect malicious cyber security events.
 
-<small>Wiki: [SOC](https://en.wikipedia.org/wiki/Security_operations_center)</small>
+<small>Wiki: [SOC ↗](https://en.wikipedia.org/wiki/Security_operations_center)</small>
 
 Some of the main areas of interest for a SOC are:
 
@@ -78,7 +78,7 @@ Security operations cover various tasks to ensure protection; one such task is _
 
 ### Threat Intelligence
 
-> In this context, <ins>intelligence refers to information you gather about actual and potential enemies</ins>. A threat is any action that can disrupt or adversely affect a system.
+In this context, **intelligence** refers to information you gather about actual and potential enemies. **A threat** is any action that can disrupt or adversely affect a system.
 
 Threat intelligence collects information to help the company better prepare against potential adversaries. The purpose would be to achieve a threat-informed defence.
 
@@ -94,7 +94,7 @@ This section is about Digital Forensics and Incident Response (DFIR), and we wil
 
 #### Digital Forensics
 
-> Forensics is the application of science to investigate crimes and establish facts. With the use and spread of digital systems, such as computers and smartphones, a new branch of forensics was born to investigate related crimes: **computer forensics**, which later evolved into **digital forensics**.
+**Forensics** is the application of science to investigate crimes and establish facts. With the use and spread of digital systems, such as computers and smartphones, a new branch of forensics was born to investigate related crimes: **computer forensics**, which later evolved into **digital forensics**.
 
 In defensive security, the focus of digital forensics shifts to analyzing evidence of an attack and its perpetrators and other areas such as intellectual property theft, cyber espionage, and possession of unauthorized content. Consequently, digital forensics will focus on different areas, such as:
 
@@ -115,16 +115,19 @@ How would you respond to a cyber attack? Incident response specifies the methodo
 
 The four major phases of the incident response process are:
 
-![incident-response](../image/incident-response.png)
+![incident-response](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/dcab2ddeb05cd1300a0d2142d87b447e.png)
 
 - **Preparation**: This requires a team trained and ready to handle incidents. Ideally, various measures are put in place to prevent incidents from happening in the first place.
+
 - **Detection and Analysis**: The team has the necessary resources to detect any incident; moreover, it is essential to analyze any detected incident further to learn about its severity.
+
 - **Containment, Eradication, and Recovery**: Once an incident is detected, it is crucial to stop it from affecting other systems, eliminate it, and recover the affected systems. For instance, when we notice that a system is infected with a computer virus, we would like to stop (contain) the virus from spreading to other systems, clean (eradicate) the virus, and ensure proper system recovery.
+
 - **Post-Incident Activity**: After a successful recovery, a report is produced, and the lesson learned is shared to prevent similar future incidents.
 
 #### Malware Analysis
 
-> Malware stands for malicious software. Software refers to programs, documents, and files you can save on a disk or send over the network. Malware includes many types, such as:
+**Malware** stands for malicious software. Software refers to programs, documents, and files you can save on a disk or send over the network. Malware includes many types, such as:
 
 - A virus is a piece of code (part of a program) that attaches itself to a program. It is designed to spread from one computer to another and works by altering, overwriting, and deleting files once it infects a computer. The result ranges from the computer becoming slow to unusable.
 - **Trojan Horse** is a program that shows one desirable function but hides a malicious function underneath. For example, a victim might download a video player from a shady website that gives the attacker complete control over their system.
@@ -147,7 +150,7 @@ Cyber security careers are becoming more in demand and offer high salaries. Ther
 
 ### Security Analyst
 
-> **Security analysts** are integral to constructing security measures across organizations to protect the company from attacks. Analysts explore and evaluate company networks to uncover actionable data and recommendations for engineers to develop preventative measures.
+**Security analysts** are integral to constructing security measures across organizations to protect the company from attacks. Analysts explore and evaluate company networks to uncover actionable data and recommendations for engineers to develop preventative measures.
 
 This job role requires working with various stakeholders to gain an understanding of security requirements and the security landscape.
 
@@ -159,7 +162,7 @@ Responsibilities
 
 ### Security Engineer
 
-> **Security engineers** develop and implement security solutions using threats and vulnerability data - often sourced from members of the security workforce. Security engineers work across circumventing a breadth of attacks, including web application attacks, network threats, and evolving trends and tactics.
+**Security engineers** develop and implement security solutions using threats and vulnerability data - often sourced from members of the security workforce. Security engineers work across circumventing a breadth of attacks, including web application attacks, network threats, and evolving trends and tactics.
 
 The ultimate goal is to retain and adopt security measures to mitigate the risk of attack and data loss.
 
@@ -171,7 +174,7 @@ Responsibilities
 
 ### Incident Responder
 
-> **Incident responders** respond productively and efficiently to security breaches. Responsibilities include creating plans, policies, and protocols for organizations to enact during and following incidents. This is often a highly pressurised position with assessments and responses required in real-time, as attacks are unfolding.
+**Incident responders** respond productively and efficiently to security breaches. Responsibilities include creating plans, policies, and protocols for organizations to enact during and following incidents. This is often a highly pressurised position with assessments and responses required in real-time, as attacks are unfolding.
 
 Incident response metrics include MTTD, MTTA, and MTTR - the meantime to detect, acknowledge, and recover (from attacks.) The aim is to achieve a swift and effective response, retain financial standing and avoid negative breach implications. Ultimately, incident responders protect the company's data, reputation, and financial standing from cyber attacks.
 
@@ -183,7 +186,7 @@ Responsibilities
 
 ### Digital Forensics Examiner
 
-> If you like to play detective, this might be the perfect job. If you are working as part of a law-enforcement department, you would be focused on collecting and analysing evidence to help solve crimes: charging the guilty and exonerating the innocent. On the other hand, if your work falls under defending a company's network, you will be using your forensic skills to analyse incidents, such as policy violations.
+If you like to play detective, this might be the perfect job. If you are working as part of a law-enforcement department, you would be focused on collecting and analysing evidence to help solve crimes: charging the guilty and exonerating the innocent. On the other hand, if your work falls under defending a company's network, you will be using your forensic skills to analyse incidents, such as policy violations.
 
 Responsibilities
 
@@ -193,7 +196,7 @@ Responsibilities
 
 ### Malware Analyst
 
-> A **malware analyst**'s work involves analysing suspicious programs, discovering what they do and writing reports about their findings. A malware analyst is sometimes called a **reverse-engineer** as their core task revolves around converting compiled programs from machine language to readable code, usually in a low-level language.
+A **malware analyst**'s work involves analysing suspicious programs, discovering what they do and writing reports about their findings. A malware analyst is sometimes called a **reverse-engineer** as their core task revolves around converting compiled programs from machine language to readable code, usually in a low-level language.
 
 This work requires the malware analyst to have a strong programming background, especially in low-level languages such as assembly language and C language. The ultimate goal is to learn about all the activities that a malicious program carries out, find out how to detect it and report it.
 
@@ -205,7 +208,7 @@ Responsibilities
 
 ### Penetration Tester
 
-> You may see penetration testing referred to as pentesting and ethical hacking. A **penetration tester**'s job role is to test the security of the systems and software within a company - this is achieved through attempts to uncover flaws and vulnerabilities through systemised hacking.
+You may see penetration testing referred to as pentesting and ethical hacking. A **penetration tester**'s job role is to test the security of the systems and software within a company - this is achieved through attempts to uncover flaws and vulnerabilities through systemised hacking.
 
 Penetration testers exploit these vulnerabilities to evaluate the risk in each instance. The company can then take these insights to rectify issues to prevent a real-world cyberattack.
 
@@ -217,7 +220,7 @@ Responsibilities
 
 ### Red Teamer
 
-> **Red teamers** share similarities to penetration testers, with a more targeted job role. Penetration testers look to uncover many vulnerabilities across systems to keep cyber-defence in good standing, whilst red teamers are enacted to test the company's detection and response capabilities.
+**Red teamers** share similarities to penetration testers, with a more targeted job role. Penetration testers look to uncover many vulnerabilities across systems to keep cyber-defence in good standing, whilst red teamers are enacted to test the company's detection and response capabilities.
 
 This job role requires imitating cyber criminals' actions, emulating malicious attacks, retaining access, and avoiding detection. Red team assessments can run for up to a month, typically by a team external to the company. They are often best suited to organizations with mature security programs in place.
 
@@ -226,7 +229,3 @@ Responsibilities
 - Emulate the role of a threat actor to uncover exploitable vulnerabilities, maintain access and avoid detection
 - Assess organizations' security controls, threat intelligence, and incident response procedures
 - Evaluate and report on insights, with actionable data for companies to avoid real-world instances
-
----
-
-END

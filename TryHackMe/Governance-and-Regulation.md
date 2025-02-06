@@ -4,15 +4,9 @@ Table of Contents
 
 - [Governance and Regulation](#governance-and-regulation)
   - [Overview](#overview)
-  - [Terminologies](#terminologies)
   - [Information Security Governance](#information-security-governance)
   - [Information Security Regulation](#information-security-regulation)
-  - [Key Benefits](#key-benefits)
-  - [Relevant Laws and Regulations](#relevant-laws-and-regulations)
-    - [General Data Protection Regulation (GDPR)](#general-data-protection-regulation-gdpr)
-    - [Health Insurance Portability and Accountability Act (HIPAA)](#health-insurance-portability-and-accountability-act-hipaa)
-    - [Payment Card Industry Data Security Standard (PCI-DSS)](#payment-card-industry-data-security-standard-pci-dss)
-    - [Gramm-Leach-Bliley Act (GLBA)](#gramm-leach-bliley-act-glba)
+    - [Relevant Laws and Regulations](#relevant-laws-and-regulations)
   - [Information Security Frameworks](#information-security-frameworks)
     - [Developing Governance Documents](#developing-governance-documents)
   - [Governance Risk and Compliance (GRC)](#governance-risk-and-compliance-grc)
@@ -28,7 +22,6 @@ Table of Contents
   - [Information Security Management and Compliance](#information-security-management-and-compliance)
     - [ISO/IEC 27001](#isoiec-27001)
     - [Service organization Control 2 (SOC 2)](#service-organization-control-2-soc-2)
-  - [Source](#source)
 
 ## Overview
 
@@ -36,7 +29,7 @@ Cyber security is a rapidly evolving landscape wherein malicious actors relentle
 
 By adopting a proactive and strategic stance towards cyber security, organizations can mitigate the risks posed by malicious actors and safeguard their sensitive systems against potentially catastrophic breaches.
 
-## Terminologies
+#### Terminologies
 
 - **Governance**: Managing and directing an organization or system to achieve its objectives and ensure compliance with laws, regulations, and standards.
 - **Regulation**: A rule or law enforced by a governing body to ensure compliance and protect against harm.
@@ -64,7 +57,7 @@ Compliance with regulations is typically mandatory and enforced by government ag
 
 Examples of information security regulations/standards include the General Data Protection Regulation (GDPR), Payment Card Industry Data Security Standard (PCI DSS), Personal Information Protection and Electronic Documents Act (PIPEDA), and many more.
 
-## Key Benefits
+**Key Benefits**
 
 The following are the benefits of implementing governance and regulation:
 
@@ -80,26 +73,26 @@ The following are the benefits of implementing governance and regulation:
 
 - **Competitive advantage**: Effective security governance and compliance with relevant regulations can provide a competitive advantage by demonstrating an organization's commitment to protecting sensitive data and enhancing stakeholder trust.
 
-## Relevant Laws and Regulations
+### Relevant Laws and Regulations
 
 Following is an overview of some relevant laws and regulations:
 
-### General Data Protection Regulation (GDPR)
+#### General Data Protection Regulation (GDPR)
 
 - Domain: Data Privacy & Protection
 - Description: A regulation propagated by the European Union that sets strict requirements for how organizations handle, protect, and secure the personal data of EU citizens and residents.
 
-### Health Insurance Portability and Accountability Act (HIPAA)
+#### Health Insurance Portability and Accountability Act (HIPAA)
 
 - Domain: Healthcare
 - Description: A US-based official law to maintain the sensitivity of health-related information of citizens.
 
-### Payment Card Industry Data Security Standard (PCI-DSS)
+#### Payment Card Industry Data Security Standard (PCI-DSS)
 
 - Domain: Financial
 - Description: Sets technical and operational requirements to ensure the secure handling, storage, processing, and transmission of cardholder data by merchants, service providers, and other entities that handle payment cards.
 
-### Gramm-Leach-Bliley Act (GLBA)
+#### Gramm-Leach-Bliley Act (GLBA)
 
 - Domain: Financial
 - Description: Financial companies must be sensitive to their customers' nonpublic personal information (NPI), including implementing information security programs, providing privacy notices, and disclosing information-sharing practices.
@@ -364,11 +357,3 @@ The following steps can be taken by an organization’s management team before a
 - Conduct the audit: The auditor will review your controls and conduct testing to assess their effectiveness. The audit may include interviews with key personnel, documentation reviews, and controls tests.
 
 - Receive the audit report: Once the audit is complete, the auditor will provide a report detailing the audit results. The report may include a description of your controls, any deficiencies or gaps identified, and recommendations for improvement.
-
-## Source
-
-[Cyber governance and regulation](https://tryhackme.com/r/room/cybergovernanceregulation)
-
----
-
-END
