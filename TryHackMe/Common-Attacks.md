@@ -8,6 +8,11 @@ Table of Contents
     - [Phishing](#phishing)
   - [Malware](#malware)
     - [Ransomware](#ransomware)
+  - [Passwords and Authentication](#passwords-and-authentication)
+    - [Exposed Passwords](#exposed-passwords)
+    - [Password Attacks](#password-attacks)
+  - [Multi-Factor Authentication and Password Managers](#multi-factor-authentication-and-password-managers)
+    - [Password Managers and Generating Strong Passwords](#password-managers-and-generating-strong-passwords)
 
 ## Overview
 
@@ -111,8 +116,74 @@ By exploiting vulnerabilities, attackers gain unauthorized access to internal ne
 #### Staying Safe from Malware
 
 - Always accept updates and patches when offered — especially in important software like operating systems. Updates often contain fixes to security flaws, so it is important to get these in place as soon as possible.
+
 - Never click on suspicious links, especially in emails. Try not to open file attachments if possible. If a message looks suspicious, delete it, or forward it to the appropriate team if using your work account.
+
 - Always be on the lookout for people trying to get you to download or run files — especially over email or instant messaging.
+
 - Never plug unknown media devices (e.g. USB devices) into important computers. If you find a device in public, do not plug it into your work laptop!
+
 - Always back up important data — this will be discussed in more detail later in the room and can be crucial in recovering from a ransomware attack.
+
 - Make sure that your antivirus software is always up-to-date and activated.
+
+## Passwords and Authentication
+
+Passwords are central to most authentication systems, protecting everything from social media to banking apps. However, even strong passwords can be undermined by poor practices, like writing them in visible places or reusing them across multiple services.
+
+This guide covers how to create strong passwords and additional steps to enhance authentication security.
+
+**What Makes a Strong Password?**
+
+Previously, strong passwords focused on complexity. For example:
+`@Ed1nburgh#1988-2000!` This password mixes uppercase, lowercase, symbols, and numbers, making it resistant to brute-force attacks. However, personal connections (like using familiar names or dates) can make such passwords vulnerable to **social engineering**.
+
+**Current Best Practices:**
+Today, the emphasis is on **length over complexity**. Passphrases like:
+`Vim is _obviously_, indisputably the best text editor in existence!`
+are longer, easier to remember, and harder to crack despite appearing less complex.
+
+**Ideal Approach:**
+For maximum security, use long, random strings:
+`w41=V1)S7KIJGPN,dII>cHEh>FRVQsj3M^]CB`
+While highly secure, these are difficult to remember, but this issue is easily solved with a **password manager**, which will be discussed in the next section.
+
+### Exposed Passwords
+
+If a service is hacked and user account data is leaked, the impact depends on how securely the service stored your information.
+
+- **Best-Case Scenario:**
+  If the service used a **secure hashing algorithm** and you have a **strong password**, your password is likely safe. However, your **email address or username** may still be exposed, which could lead to **spam or phishing attempts**.
+
+- **Worst-Case Scenario:**
+  If passwords were stored in **plaintext** or with weak hashing, attackers could easily access your login credentials. This allows them to:
+  - **Take over your account** on the compromised service.
+  - Perform **credential stuffing**—trying your stolen username and password on other sites to exploit password reuse.
+
+Leaked credentials often circulate on the **dark web**, increasing the risk of further attacks.
+
+#### **Protecting Yourself with Data Exposure Notifications**
+
+To stay informed about breaches, use **data exposure notification services** like **[Have I Been Pwned?](https://haveibeenpwned.com/)**. This free service checks if your **email** has appeared in known data breaches and allows you to sign up for **alerts** if future breaches occur.
+
+While not a foolproof defense, these notifications provide an **early warning**, giving you time to **change your passwords** before attackers exploit the breach.
+
+### Password Attacks
+
+An attacker has a few options when it comes to attacking passwords and authentication systems. Some attacks are entirely local (i.e. working entirely on a device owned by the attacker without interacting with the target service at all), others are remote attacks involving the original server.
+
+- **Local attacks** require a stolen copy of the credentials in question. The attacker will take a file full of stolen usernames/emails and hashed passwords, then use software to effectively try to guess the input that created the hash either using randomly generated sequences of characters (slower but more thorough) or by using a pre-generated wordlist of possible passwords (faster but much more likely to miss things). Hybrid types are also very widely used; these are when an attacker takes an existing wordlist and mutates it to add new characters, symbols, or random elements. Local password attacks will be demonstrated in the interactive element for this task.
+
+- **Remote attacks** tend to be one of two categories; they either involve attempting to brute-force known usernames by sending requests to the server and seeing what it responds with, or they use known username and password pairs from previous breaches to see if they are valid on the target site — this is the aforementioned credential stuffing.
+
+## Multi-Factor Authentication and Password Managers
+
+**Multi-Factor Authentication (or MFA)** is a term used to describe any authentication process where you need more than one thing to log in. An example is **a Time-based One Time Password (or TOTP)**, one of the most common second factors currently in use.
+
+Unfortunately, SMS (text message) based TOTP authentication — despite being the most commonly used — is far from the most secure as there have been documented cases of attackers managing to reroute a victim's texts without undue difficulty.
+
+Fortunately, it is possible to generate second-factor authentication yourself, such as using Authenticator APP which requires no network connectivity or interceptable SMS.
+
+### Password Managers and Generating Strong Passwords
+
+At the most basic level, **password managers** provide a safe space to store your passwords. They store passwords in "vaults": encrypted storage either locally on your own device, or as an online service (which also usually allows you to access your passwords from any device). These vaults are accessed using a master password — the only password you need to remember — or (more commonly in recent years) biometric data such as a fingerprint.
