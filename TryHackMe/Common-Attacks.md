@@ -13,6 +13,11 @@ Table of Contents
     - [Password Attacks](#password-attacks)
   - [Multi-Factor Authentication and Password Managers](#multi-factor-authentication-and-password-managers)
     - [Password Managers and Generating Strong Passwords](#password-managers-and-generating-strong-passwords)
+  - [Public Network Safety](#public-network-safety)
+    - [Website Connection Security](#website-connection-security)
+  - [Backups](#backups)
+  - [Updates and Patches](#updates-and-patches)
+    - [Antivirus Updates](#antivirus-updates)
 
 ## Overview
 
@@ -187,3 +192,57 @@ Fortunately, it is possible to generate second-factor authentication yourself, s
 ### Password Managers and Generating Strong Passwords
 
 At the most basic level, **password managers** provide a safe space to store your passwords. They store passwords in "vaults": encrypted storage either locally on your own device, or as an online service (which also usually allows you to access your passwords from any device). These vaults are accessed using a master password — the only password you need to remember — or (more commonly in recent years) biometric data such as a fingerprint.
+
+## Public Network Safety
+
+Public WiFi, whilst incredibly handy, also gives an attacker ideal opportunities to attack other users' devices or simply intercept and record traffic to steal sensitive information. This latter technique can be as simple as exploiting the fact that most people expect to see public networks available. The attacker can quickly set up a network of their own and monitor the traffic of everyone who connects; this is referred to as a "man-in-the-middle" attack and is very easy to carry out.
+
+The ideal solution to this problem is simply not connecting to untrusted networks. Beneficial though public wireless connections are, it will always be safer to use a mobile hotspot or private network. Unfortunately, the ideal solution is not always feasible; when this is the case, we must rely on other methods of staying safe.
+
+**Virtual Private Networks (VPNs)** encrypt all traffic leaving and re-entering your machine, rendering any interception techniques useless as the intercepted data will simply look like gibberish.
+
+### Website Connection Security
+
+The encrypted connection used to create **HTTPS (Hyper Text Transfer Protocol Secure)** is referred to as **TLS (Transport Layer Security)**, and in most browsers is represented by a padlock to the left of the search bar, which indicates that the connection is secure.
+
+> [!WARNING]
+>
+> If you are accessing a website without the padlock symbol, **never** enter any credentials or sensitive information — especially if you are using an untrusted network.
+
+## Backups
+
+**Backups** are arguably the single most important defensive measure you can take to protect your data. No matter what happens, if you have taken appropriate steps to back your information up, you will always be able to recover almost regardless of the severity of the damage.
+
+The **3-2-1 backup rule** is a widely recommended strategy for ensuring data safety and disaster recovery. Here's what it means:
+
+**3 Copies of Your Data:**
+
+- Keep **three total copies** of your data. This includes the original data and **two backups**.
+
+**2 Different Storage Media:**
+
+- Store the copies on **at least two different types of storage media**. For example, one copy on your computer’s hard drive and another on an external hard drive or a Network Attached Storage (NAS) device.
+
+**1 Copy Offsite:**
+
+- Keep **one backup copy offsite**. This could be in the cloud or at a physical location different from where the primary data is stored to protect against local disasters (e.g., fire, theft, flood).
+
+#### Why It Matters
+
+- **Redundancy:** Having multiple copies reduces the risk of total data loss.
+- **Diverse Media:** Using different storage types protects against specific hardware failures.
+- **Offsite Protection:** Ensures data safety from physical threats like natural disasters.
+
+## Updates and Patches
+
+Updates are an essential part of the software development lifecycle; they allow developers to add new features, fix bugs and otherwise simply alter aspects of the product. When vulnerabilities are discovered in software, the developers usually release special updates called patches that contain a fix for the vulnerability or otherwise "patch" the security issue.
+
+For this reason, it is imperative that you update software whenever possible — especially for things like operating systems (e.g. Windows or macOS) where vulnerabilities can be particularly dangerous.
+
+### Antivirus Updates
+
+Most antivirus software packages receive very frequent updates; this is because they largely work using a local database of known exploit signatures, which must be kept up-to-date.
+
+In other words: when new malware is discovered, it gets sent around antivirus vendors who generate a "signature" that identifies this particular piece of malicious software. These signatures are then distributed to every device on the planet that uses the antivirus software, ensuring that your installed antivirus solution is kept up-to-date on all the latest (known) malware.
+
+If antivirus software is not allowed to update it will still be able to catch some malware through other methods. However, the local signature database will quickly become outdated, resulting in malicious software potentially falling through the gaps. In short: if the antivirus wants to update, let it!
