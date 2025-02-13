@@ -10,6 +10,13 @@ Table of Contents
     - [MAC Addresses](#mac-addresses)
     - [Spoofing](#spoofing)
   - [Ping (ICMP)](#ping-icmp)
+  - [Intro to LAN](#intro-to-lan)
+    - [Star Topology](#star-topology)
+    - [Bus Topology](#bus-topology)
+    - [Ring Topology](#ring-topology)
+    - [What is a Switch?](#what-is-a-switch)
+    - [What is a Router?](#what-is-a-router)
+    - [A Primer on Subnetting](#a-primer-on-subnetting)
 
 ## What is Networking?
 
@@ -101,3 +108,99 @@ Ping uses **ICMP (Internet Control Message Protocol)** packets to determine the 
 The time taken for ICMP packets traveling between devices is measured by ping. This measuring is done using ICMP's echo packet and then ICMP's echo reply from the target device.
 
 Pings can be performed against devices on a network, such as your home network or resources like websites. This tool can be easily used and comes installed on Operating Systems (OSs) such as Linux and Windows. The syntax to do a simple ping is: `ping IP address or website URL`.
+
+## Intro to LAN
+
+Over the years, there has been experimentation and implementation of various network designs. In reference to networking, when we refer to the term "topology", we are actually referring to the design or look of the network at hand. Let's discuss the advantages and disadvantages of these topologies below.
+
+### Star Topology
+
+The main premise of a star topology is that devices are individually connected via a central networking device such as a switch or hub. This topology is the most commonly found today because of its reliability and scalability - despite the cost.
+
+Any information sent to a device in this topology is sent via the central device to which it connects.
+
+**Advantage**
+
+- Scalable in nature, which means that it is very easy to add more devices as the demand for the network increases.
+
+**Disadvantages**
+
+- More expensive than any other topologies because more cabling and the purchase of dedicated networking equipment is required for this topology.
+
+- Prone to failure: If the centralised hardware that connects devices fails, these devices will no longer be able to send or receive data. Thankfully, these centralised hardware devices are often robust.
+
+### Bus Topology
+
+This type of connection relies upon a single connection which is known as a backbone cable. This type of topology is similar to the leaf off of a tree in the sense that devices (leaves) stem from where the branches are on this cable.
+
+**Advantage**
+
+- Cost-efficient: One of the easier and more cost-efficient topologies to set up because of their expenses, such as cabling or dedicated networking equipment used to connect these devices.
+
+**Disadvantages**
+
+- Prone to becoming slow: Because all data destined for each device travels along the same cable, it is very quickly prone to becoming slow and bottlenecked if devices within the topology are simultaneously requesting data.
+
+- Hard to troubleshoot: It gets very difficult troubleshooting when identifying which device is experiencing issues with data all traveling along the same route.
+
+- Little redundancy: There is little redundancy in place in case of failures. This disadvantage is because there is a single point of failure along the backbone cable. If this cable were to break, devices can no longer receive or transmit data along the bus.
+
+### Ring Topology
+
+The ring topology (also known as token topology) boasts some similarities. Devices such as computers are connected directly to each other to form a loop, meaning that there is little cabling required and less dependence on dedicated hardware such as within a star topology.
+
+A ring topology works by sending data across the loop until it reaches the destined device, using other devices along the loop to forward the data. Interestingly, a device will only send received data from another device in this topology if it does not have any to send itself. If the device happens to have data to send, it will send its own data first before sending data from another device.
+
+**Advantages**
+
+- Easy to troubleshoot: Because there is only one direction for data to travel across this topology, it is fairly easy to troubleshoot any faults that arise.
+
+- Less prone to bottlenecks as large amounts of traffic are not traveling across the network at any one time.
+
+**Disadvantages**
+
+- Not the most efficient: It isn't an efficient way of data traveling across a network, as it may have to visit many multiple devices first before reaching the intended device.
+
+- The design of this topology does mean that a fault such as cut cable, or broken device will result in the entire networking breaking.
+
+### What is a Switch?
+
+Switches are dedicated devices within a network that are designed to aggregate multiple other devices such as computers, printers, or any other networking-capable device using ethernet. These various devices plug into a switch's port. Switches are usually found in larger networks such as businesses, schools, or similar-sized networks, where there are many devices to connect to the network. Switches can connect a large number of devices by having ports of 4, 8, 16, 24, 32, and 64 for devices to plug into.
+
+Switches are much more efficient than their lesser counterpart (hubs/repeaters). Switches keep track of what device is connected to which port. This way, when they receive a packet, instead of repeating that packet to every port like a hub would do, it just sends it to the intended target, thus reducing network traffic.
+
+---
+
+<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/2504bf9d718556c764c28843f43febe0.png" alt="A Switch visualized">
+
+---
+
+Both Switches and Routers can be connected to one another. The ability to do this increases the redundancy (the reliability) of a network by adding multiple paths for data to take. If one path goes down, another can be used. Whilst this may reduce the overall performance of a network because packets have to take longer to travel, there is no downtime -- a small price to pay considering the alternative.
+
+### What is a Router?
+
+It's a router's job to connect networks and pass data between them. It does this by using routing (hence the name router!).
+
+Routing is the label given to the process of data traveling across networks. Routing involves creating a path between networks so that this data can be successfully delivered.
+
+### A Primer on Subnetting
+
+**Subnetting** is the term given to splitting up a network into smaller, miniature networks within itself. It is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a **subnet mask**.
+
+<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/3e3b2a9eeaf249ce0a7f4dbb46f0bd14.png" alt="Subnetting">
+
+Subnets use IP addresses in three different ways:
+
+- Identify the network address
+- Identify the host address
+- Identify the default gateway
+
+---
+
+| Type            | Purpose                              | Explanation                                                                                                                     | Example       |
+| --------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| Network Address | Identifies the start of the network  | Used to identify a network's existence. For example, a device with the IP address 192.168.1.100 is on the network 192.168.1.0   | 192.168.1.0   |
+| Host Address    | Identifies a device on the subnet    | An IP address used to identify a device within the network. For example, 192.168.1.100 is a host address.                       | 192.168.1.100 |
+| Default Gateway | Sends information to another network | A special address that forwards traffic to devices outside the network. Often uses the first or last host address (.1 or .254). | 192.168.1.254 |
+
+---
