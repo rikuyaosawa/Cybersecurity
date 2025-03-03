@@ -1,8 +1,6 @@
-# Networking FUndamentals
+# Networking Fundamentals
 
-Table of Contents
-
-- [Networking FUndamentals](#networking-fundamentals)
+- [Networking Fundamentals](#networking-fundamentals)
   - [What is Networking?](#what-is-networking)
   - [What is the Internet?](#what-is-the-internet)
   - [Identifying Devices on a Network](#identifying-devices-on-a-network)
@@ -20,17 +18,13 @@ Table of Contents
 
 ## What is Networking?
 
-In computing, a **network** is simply devices that are connected together. A network can be formed by anywhere from 2 devices to billions. These devices include everything from your laptop and phone to security cameras, traffic lights and even farming!
-
-Networks are integrated into our everyday life. Be it gathering data for the weather, delivering electricity to homes or even determining who has the right of way at a road. Because networks are so embedded in the modern-day, networking is an essential concept to grasp in cybersecurity.
+In computing, a **network** is simply devices that are connected together. These devices include everything from your laptop and phone to security cameras, traffic lights and even farming!
 
 ## What is the Internet?
 
 **The Internet** is one giant network that consists of many, many small networks within itself.
 
-The first iteration of the Internet was within the ARPANET project in the late 1960s. This project was funded by the United States Defence Department and was the first documented network in action.
-
-However, it wasn't until 1989 when the Internet as we know it was invented by Tim Berners-Lee by the creation of **the World Wide Web (WWW)**. It wasn't until this point that the Internet started to be used as a repository for storing and sharing information, just like it is today.
+The Internet as we know it was invented by Tim Berners-Lee by the creation of **the World Wide Web (WWW)**.
 
 A network can be one of two types:
 
@@ -39,7 +33,7 @@ A network can be one of two types:
 
 ## Identifying Devices on a Network
 
-Every human has an individual set of fingerprints which means that even if they change their name, there is still an identity behind it. Devices have the same thing: two means of identification, with one being permeable.
+Devices have two means of identification, with one being permeable.
 
 These are:
 
@@ -58,7 +52,7 @@ Example of IPv4:
 
 An IP address is a set of numbers that are divided into four **octets**. The value of each octet will summarise to be the IP address of the device on the network. This number is calculated through a technique known as IP addressing & subnetting.
 
-We should recall that devices can be on both a private and public network. Depending on where they are will determine what type of IP address they have: a public or private IP address.
+Depending on where they are will determine what type of IP address they have: a public or private IP address.
 
 #### Public and Private Address
 
@@ -111,7 +105,7 @@ Pings can be performed against devices on a network, such as your home network o
 
 ## Intro to LAN
 
-Over the years, there has been experimentation and implementation of various network designs. In reference to networking, when we refer to the term "topology", we are actually referring to the design or look of the network at hand. Let's discuss the advantages and disadvantages of these topologies below.
+Over the years, there has been experimentation and implementation of various network designs. In reference to networking, the term "**topology**" refers to the design or look of the network at hand.
 
 ### Star Topology
 
@@ -147,9 +141,9 @@ This type of connection relies upon a single connection which is known as a back
 
 ### Ring Topology
 
-The ring topology (also known as token topology) boasts some similarities. Devices such as computers are connected directly to each other to form a loop, meaning that there is little cabling required and less dependence on dedicated hardware such as within a star topology.
+In the ring topology (also known as token topology), devices such as computers are connected directly to each other to form a loop. It works by sending data across the loop until it reaches the destined device, using other devices along the loop to forward the data.
 
-A ring topology works by sending data across the loop until it reaches the destined device, using other devices along the loop to forward the data. Interestingly, a device will only send received data from another device in this topology if it does not have any to send itself. If the device happens to have data to send, it will send its own data first before sending data from another device.
+A device will only send received data from another device in this topology if it does not have any to send itself.
 
 **Advantages**
 
@@ -159,27 +153,21 @@ A ring topology works by sending data across the loop until it reaches the desti
 
 **Disadvantages**
 
-- Not the most efficient: It isn't an efficient way of data traveling across a network, as it may have to visit many multiple devices first before reaching the intended device.
+- Not the most efficient as it may have to visit many multiple devices first before reaching the intended device.
 
-- The design of this topology does mean that a fault such as cut cable, or broken device will result in the entire networking breaking.
+- Little redundancy: the design of this topology does mean that a fault such as cut cable, or broken device will result in the entire networking breaking.
 
 ### What is a Switch?
 
-Switches are dedicated devices within a network that are designed to aggregate multiple other devices such as computers, printers, or any other networking-capable device using ethernet. These various devices plug into a switch's port. Switches are usually found in larger networks such as businesses, schools, or similar-sized networks, where there are many devices to connect to the network. Switches can connect a large number of devices by having ports of 4, 8, 16, 24, 32, and 64 for devices to plug into.
+Switches are dedicated devices within a network that are designed to aggregate multiple other devices such as computers, printers, or any other networking-capable device using ethernet. These various devices plug into a switch's port. Switches can connect a large number of devices by having ports of 4, 8, 16, 24, 32, and 64 for devices to plug into.
 
 Switches are much more efficient than their lesser counterpart (hubs/repeaters). Switches keep track of what device is connected to which port. This way, when they receive a packet, instead of repeating that packet to every port like a hub would do, it just sends it to the intended target, thus reducing network traffic.
-
----
-
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/2504bf9d718556c764c28843f43febe0.png" alt="A Switch visualized">
-
----
 
 Both Switches and Routers can be connected to one another. The ability to do this increases the redundancy (the reliability) of a network by adding multiple paths for data to take. If one path goes down, another can be used. Whilst this may reduce the overall performance of a network because packets have to take longer to travel, there is no downtime -- a small price to pay considering the alternative.
 
 ### What is a Router?
 
-It's a router's job to connect networks and pass data between them. It does this by using routing (hence the name router!).
+It's a router's job to connect networks and pass data between them. It does this by using routing.
 
 Routing is the label given to the process of data traveling across networks. Routing involves creating a path between networks so that this data can be successfully delivered.
 
@@ -187,20 +175,8 @@ Routing is the label given to the process of data traveling across networks. Rou
 
 **Subnetting** is the term given to splitting up a network into smaller, miniature networks within itself. It is achieved by splitting up the number of hosts that can fit within the network, represented by a number called a **subnet mask**.
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/3e3b2a9eeaf249ce0a7f4dbb46f0bd14.png" alt="Subnetting">
-
 Subnets use IP addresses in three different ways:
 
 - Identify the network address
 - Identify the host address
 - Identify the default gateway
-
----
-
-| Type            | Purpose                              | Explanation                                                                                                                     | Example       |
-| --------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| Network Address | Identifies the start of the network  | Used to identify a network's existence. For example, a device with the IP address 192.168.1.100 is on the network 192.168.1.0   | 192.168.1.0   |
-| Host Address    | Identifies a device on the subnet    | An IP address used to identify a device within the network. For example, 192.168.1.100 is a host address.                       | 192.168.1.100 |
-| Default Gateway | Sends information to another network | A special address that forwards traffic to devices outside the network. Often uses the first or last host address (.1 or .254). | 192.168.1.254 |
-
----
