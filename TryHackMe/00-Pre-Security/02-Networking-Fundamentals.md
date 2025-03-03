@@ -15,6 +15,8 @@
     - [What is a Switch?](#what-is-a-switch)
     - [What is a Router?](#what-is-a-router)
     - [A Primer on Subnetting](#a-primer-on-subnetting)
+    - [Address Resolution Protocol](#address-resolution-protocol)
+    - [Dynamic Host Configuration Protocol](#dynamic-host-configuration-protocol)
 
 ## What is Networking?
 
@@ -180,3 +182,28 @@ Subnets use IP addresses in three different ways:
 - Identify the network address
 - Identify the host address
 - Identify the default gateway
+
+### Address Resolution Protocol
+
+The **Address Resolution Protocol or ARP** for short, is the technology that is responsible for allowing devices to identify themselves on a network.
+
+When devices wish to communicate with another, they will send a broadcast to the entire network searching for the specific device. Devices can use ARP to find the MAC address (and therefore the physical identifier) of a device for communication.
+
+In order to map these two identifiers together (IP address and MAC address), ARP sends two types of messages:
+
+- **ARP Request**
+- **ARP Reply**
+
+When an ARP request is sent, a message is broadcasted on the network to other devices asking, "What is the mac address that owns this IP address?" When the other devices receive that message, they will only respond if they own that IP address and will send an ARP reply with its MAC address. The requesting device can now remember this mapping and store it in its **ARP cache** for future use.
+
+### Dynamic Host Configuration Protocol
+
+IP addresses can be assigned either manually, by entering them physically into a device, or automatically and most commonly by using a **DHCP (Dynamic Host Configuration Protocol)** server.
+
+1. DHCP Discover: When a device connects to a network, if it has not already been manually assigned an IP address, it sends out a request (DHCP Discover) to see if any DHCP servers are on the network.
+
+2. DHCP Offer: The DHCP server then replies back with an IP address the device could use (DHCP Offer).
+
+3. DHCP Request: The device then sends a reply confirming it wants the offered IP Address (DHCP Request).
+
+4. DHCP ACK: Lastly, the DHCP server sends a reply acknowledging this has been completed, and the device can start using the IP Address (DHCP ACK).
